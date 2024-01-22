@@ -64,7 +64,7 @@ st.divider()
 if st.button('Predict'):
     # val = model.predict([[-0.362110, -1.488239, -1.802983, 0.140430, -0.523883, -0.640246, 0.899975]])
     val = model.predict(scaler.transform(
-        [[gre_score, tofel_score, univ_rating, sop, lor, cgpa, reaserch_val]]))
+        [[gre_score, toefl_score, univ_rating, sop, lor, cgpa, reaserch_val]]))
     st.write(val)
 else:
     st.write('Know your chnace of admit')
