@@ -5,13 +5,14 @@ import numpy as np
 import datetime
 
 
-st.write("Hello World222222222222")
+st.write("Hello World")
 
 df = pd.read_csv(
-    "https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/003/549/original/logistic_regression.csv?1651045921")
+    "https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/001/839/original/Jamboree_Admission.csv")
 
 st.dataframe(df[:20])
-model = pickle.load(open("model.pkl", "rb"))
+# model = pickle.load(open("model.pkl", "rb"))
+model = pickle.load(open("lr.pkl", "rb"))
 
 col1, col2, col3 = st.columns(3)
 
